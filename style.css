@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 .flex-container {
     display: flex;
 }
@@ -7,16 +11,28 @@
     margin: 10%;
 }
 
+header {
+    text-align: center;
+}
+
 header ul {
     list-style: none;
 }
 
 header ul li {
-    align-self: center;
     margin-left: 10%;
+    padding: 10px;
+    flex-grow: 1;
+    font-size: 1.5vw; /*Used for responsive text*/
 }
+
+#splashWelcome {
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
 .fade-inImage {
-    animation: fadeIn 5s;
+    animation: fadeIn 3s;
 }
 
 @keyframes fadeIn {
