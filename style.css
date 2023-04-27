@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+}
+
+#overview {
+    align-self: center;
+    margin: 10%;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    align-self: center;
+    margin-left: 10%;
+}
+.fade-inImage {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
