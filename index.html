@@ -14,14 +14,15 @@
 
 <body>
   <header>
-    <section id="navBar" class="flex-container">
+    <section class="flex-container">
       <img src="media/DW_Icon.webp" width="80" height="80" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre.">
-      <nav>
-        <ul class="flex-container">
+      <nav style="width: 100%">
+        <ul class="flex-container" id="navBar">
           <li><a href="#aboutSubhead">About</a></li>
           <li>Gallery</li>
           <li>Reviews</li>
-          <li>Get in Contact</li>
+          <li style="flex-grow: 3;">Get in Contact</li>
+          <li>07927 093498</li>
         </ul>
       </nav>
       <!-- <p style="align-self: right;">07927 093498</p> -->
@@ -30,11 +31,10 @@
 
   <article id="splashWelcome">
     <section class="flex-container">
-      <img class="fade-inImage" id="logo" src="media/Dwebbelectrics_Logo.webp" width="600" height="auto" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre. The text to the right reads D Webb Electrics, Domestic and Commercial">
+      <img class="fade-inImage" id="logo" src="media/Dwebbelectrics_Logo.webp" width="800vw" height="auto" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre. The text to the right reads D Webb Electrics, Domestic and Commercial">
       <p id="overview">Electrical company</p>
     </section>
     <button id="findMore"><a href="#aboutSubhead">Find Out More</a></button>
-
   </article>
 
   <main>
@@ -43,7 +43,7 @@
     </section>
   </main>
   
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
