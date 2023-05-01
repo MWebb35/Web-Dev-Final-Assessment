@@ -161,7 +161,7 @@ input[type=submit], select, textarea {
     color:#004aad
 }
 
-.star:hover{
+.star1:hover + .colourStar1{
     visibility: hidden;
 }
 

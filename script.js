@@ -24,7 +24,7 @@ function topFunction() {
 function validateReview() {
   var review = document.forms["reviewForm"]["firstName"].value;
   if (review == ""){
-    alert("Please enter your first name out to continue")
+    alert("Please enter your first name out to continue");
     return false;
   }
 }
