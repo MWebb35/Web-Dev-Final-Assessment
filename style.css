@@ -55,15 +55,20 @@ header ul li {
 #splashWelcome {
     margin-top: 8rem;
     border: 1px solid black;
+    flex-grow: 2;
 }
 
 #overview {
-    align-self: center;
-    margin: 10%;
+    /*align-self: center;*/
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 3%;
+    font-size: 1.2rem;
+    flex-grow: 1;
 }
 
 #logo {
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .fade-inImage {
@@ -79,6 +84,9 @@ header ul li {
 #findMore {
     align-self: bottom;
     padding: 2vw;
+    font-size: 1.2rem;
+    border: none;
+    background-color: white;
 }
 
 .parallax {
