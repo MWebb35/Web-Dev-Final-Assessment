@@ -19,3 +19,12 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//VALIDATE FORM 
+function validateReview() {
+  var review = document.forms["reviewForm"]["firstName"].value;
+  if (review == ""){
+    alert("Please enter your first name out to continue")
+    return false;
+  }
+}

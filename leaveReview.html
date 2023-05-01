@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Data-->
+        <meta charset="utf-8">
+        <meta name="Description" content="Review Form for DWebbElectrics">
+        <meta name="Keywords" content="Electric, Review, Client">
+        <meta name="author" content="Madison Webb">
+        <meta name="viewport" content="width=device-width">
+
+        <!--Title-->
+        <title>DWEBBELECTRICS</title>
+
+        <!--Webpage Icon-->
+        <link rel="icon" href="media/DW_Icon.webp"/>
+        
+        <!--Stylesheet-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        <!--Icon Library - allows the use of external icons-->
+        <script src="https://kit.fontawesome.com/b8f6c2aae8.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <!--Creates the container at the top-->
+            <section class="flex-container">
+            <!--Logo-->
+            <img src="media/DW_Icon.webp" width="80" height="80" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre.">
+            
+            <!--Navigation - width is included to solve a logic error where the elements would not space equally-->
+            <nav style="width: 100%">
+                <!--Flexbox within a flexbox-->
+                <ul class="flex-container" id="navBar">
+                <li><a href="index.html" style="cursor: pointer;">About</a></li> <!--Link to about section on the same page-->
+                <li>Gallery</li>
+                <li>Reviews</li>
+                <li style="flex-grow: 3;">Get in Contact</li>
+                <li><i class="fa-solid fa-phone" style="color: #004AAD;"></i> 07927 093498</li><!--Icon preceded by the company number-->
+                </ul>
+            </nav>
+            <!-- Previous attempt at making the phone number stay right: <p style="align-self: right;">07927 093498</p> -->
+            </section>
+        </header>
+
+        <main>
+            <section id="reviewOpening">
+                <h2>Leave a Review!</h2>
+                <p>Have you had some work completed by DWebbElectrics? We'd love to hear your experience</p>
+            </section>
+    
+            <section class="container">
+                <form id="reviewForm" onsubmit="return validateReview()">
+                    <label for="firstName">First Name</label><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="First name"><br>
+
+                    <label for="starReview">Star Review</label>
+                    <i class="fa-regular fa-star star" style="color: #004aaf;"></i>
+                    <i class="fa-solid fa-star colourStar" style="color: #004aaf;"></i>
+                    <i class="fa-regular fa-star" style="color: #004aaf;"></i>
+                    <i class="fa-regular fa-star" style="color: #004aaf;"></i>
+                    <i class="fa-regular fa-star" style="color: #004aaf;"></i>
+                    <i class="fa-regular fa-star" style="color: #004aaf;"></i>
+
+                    <label for="review">Review</label><br>
+                    <input type="text" id="review" name="review" placeholder="Leave a Review..."><br>
+                    <input type="submit" value="Submit">
+                </form>
+
+            </section>
+        </main>
+
+        <!--Call to JS-->
+        <script src="script.js" defer></script>
+    </body>
+
+</html>
