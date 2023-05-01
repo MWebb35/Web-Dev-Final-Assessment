@@ -30,7 +30,7 @@ header {
     width: 100%;
     border: 1px solid black;
     background-color: white;
-    
+    z-index: 99;
 }
 
 header ul {
@@ -81,6 +81,22 @@ header ul li {
     100% { opacity: 1; }
 }
 
+/*TO TOP BUTTON*/
+#topBtn {
+    display: none; /* Hidden initally */
+    position: fixed; /*Keeps the button on the page*/
+    bottom: 20px; /*Position is kept at the bottom of the page*/
+    right: 30px; /*Keeps the button on the right hand side of the screen*/
+    z-index: 99; /*Ensures that it is kept in front of other elements*/
+    width: 50px;
+    padding: 15px;
+    border-radius: 10%;
+    cursor: pointer; /*On hover, the appearance of the cursor changes*/
+    background-color: rgb(249, 240, 240);
+}
+
+
+
 /*FIND OUT BUTTON AND FUNKY SCROLL EFFECTS*/
 #findMore {
     align-self: bottom;
@@ -92,11 +108,11 @@ header ul li {
 
 .parallax {
   background-image: url("media/cable.webp");
-  opacity: 80%;
 
   /* Set a specific height */
   min-height: 500px;
   width: 100%;
+  padding-bottom: 2%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;

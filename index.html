@@ -2,47 +2,70 @@
 <html lang="en">
 
 <head>
+  <!--Meta Data-->
   <meta charset="utf-8">
   <meta name="Description" content="Business website for a Southern electrical engineering company">
   <meta name="Keywords" content="Electric, Business, Professional">
   <meta name="author" content="Madison Webb">
   <meta name="viewport" content="width=device-width">
+
+  <!--Title-->
   <title>DWEBBELECTRICS</title>
+
+  <!--Webpage Icon-->
   <link rel="icon" href="media/DW_Icon.webp"/>
+
+  <!--Stylesheet-->
   <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!--Icon Library - allows the use of external icons-->
   <script src="https://kit.fontawesome.com/b8f6c2aae8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <!--Header-->
   <header>
+    <!--Creates the container at the top-->
     <section class="flex-container">
+      <!--Logo-->
       <img src="media/DW_Icon.webp" width="80" height="80" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre.">
+      
+      <!--Navigation - width is included to solve a logic error where the elements would not space equally-->
       <nav style="width: 100%">
+        <!--Flexbox within a flexbox-->
         <ul class="flex-container" id="navBar">
-          <li><a href="#aboutSubhead">About</a></li>
+          <li><a href="#aboutSubhead" style="cursor: pointer;">About</a></li> <!--Link to about section on the same page-->
           <li>Gallery</li>
           <li>Reviews</li>
           <li style="flex-grow: 3;">Get in Contact</li>
-          <li><i class="fa-solid fa-phone" style="color: #004AAD;"></i> 07927 093498</li>
+          <li><i class="fa-solid fa-phone" style="color: #004AAD;"></i> 07927 093498</li><!--Icon preceded by the company number-->
         </ul>
       </nav>
-      <!-- <p style="align-self: right;">07927 093498</p> -->
+      <!-- Previous attempt at making the phone number stay right: <p style="align-self: right;">07927 093498</p> -->
     </section>
   </header>
 
+  <!--Splash Screen Welcome-->
   <article id="splashWelcome">
     <section class="flex-container">
+      <!--Full Logo with fade in-->
       <img class="fade-inImage" id="logo" src="media/Dwebbelectrics_Logo.webp" width="800vw" height="auto" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre. The text to the right reads D Webb Electrics, Domestic and Commercial">
+      <!--Brief company overview-->
       <p id="overview"><em>Bringing light to your home and business with quality electrical solutions since 2018</em></p>
     </section>
+    <!--Find out more button-->
     <button id="findMore"><a href="#aboutSubhead">Find Out More</a></button>
   </article>
 
+  <!--To Top Button - Utilises both CSS and Javascript-->
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up" style="color: #004aad;"></i></button>
+  
   <main>
-    <section class="parallax">
+    <!--About Section-->
+    <section class="parallax"> <!--Uses the Parallax class-->
       <h2 id="aboutSubhead">About</h2>
       <p id="aboutP">DWebbElectrics is a South England-based electrical company that provides specialised services in high-quality electrical repairs and installations for both residential and commercial clients. Our team of certified electricians has extensive knowledge and experience in the industry and is dedicated to providing excellent services you can rely on.
-        <br><br>
+        <br><br> <!--Multiple breaks to create appropriate spacing-->
         We understand that electrical problems can cause inconvenience and even pose a safety risk to you and your property. That's why we are committed to providing prompt and reliable repair services to get your electrical system running efficiently.
         <br><br>
         In addition to our repair services, we also offer installation services for new and existing electrical systems. Whether you need a new lighting system installed, an electrical panel upgrade or a complete rewiring of your home, our experts will get the job done right.
@@ -54,6 +77,7 @@
     </section>
   </main>
   
+  <!--Call to JS-->
   <script src="script.js" defer></script>
 </body>
 
