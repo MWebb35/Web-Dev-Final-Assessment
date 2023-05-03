@@ -45,20 +45,22 @@
     </header>
 
     <main>
-        <?php echo "<h1> Oh Hi!</h1>"; ?>
+        <?="<h1> Oh Hi!</h1>"; ?>
         <section class="container">
             <form id="contactForm" action="validate.php" method="post">
                 <label for="firstName">First Name</label><br>
-                <input type="text" id="firstName" name="firstName" placeholder="First name"><br>
+                <input type="text" id="firstName" name="firstName" value="<?=$POST['firstName'];?>" placeholder="First name"><br>
     
                 <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" placeholder="Email"><br>
+                <input type="text" id="email" name="email" value="<?=$POST['email'];?>" placeholder="Email"><br>
     
                 <label for="message">Message</label><br>
-                <textarea type="text" id="message" name="message" placeholder="Message"></textarea><br>
+                <textarea type="text" id="message" name="message" placeholder="Message" value="<?=$POST['message'];?>"></textarea><br>
 
                 <input type="submit" value="Submit">
             </form>
+
+            echo filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);
 
         </section>
         
