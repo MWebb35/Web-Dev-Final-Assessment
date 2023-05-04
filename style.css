@@ -13,13 +13,18 @@ html {
     display: flex;
 }
 
-a:link {
+a:link { /*Removes the underline and blue*/
     text-decoration: none;
 }
 
-a:visited {
+a:hover {
     text-decoration: none;
-    color: black;
+    color: #004aad;
+}
+
+a:visited { /*Makes it so the text decoration is removed on visited*/
+    text-decoration: none;
+    color: black ;
 }
 
 /*NAV BAR/HEADER*/
@@ -124,7 +129,6 @@ header ul li {
 }
 
 /*ABOUT*/
-
 #aboutSubhead {
     color: white;
     font-size: 60px;
@@ -178,3 +182,5 @@ input[type=submit], select, textarea {
         animation: none;
     }
 }
+
+@media screen 
