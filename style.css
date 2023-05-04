@@ -19,6 +19,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
+    color: black;
 }
 
 /*NAV BAR/HEADER*/
@@ -44,6 +45,7 @@ header ul li {
     font-size: 1.5vw; /*Used for responsive text - will resize accordingly on different screens*/
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 #navBar {
@@ -170,3 +172,9 @@ input[type=submit], select, textarea {
     text-align: left;
 }
 
+/*Media Queries*/
+@media (prefers-reduced-motion){
+    .fade-inImage {
+        animation: none;
+    }
+}
