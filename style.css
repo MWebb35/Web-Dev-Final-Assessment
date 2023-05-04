@@ -183,4 +183,23 @@ input[type=submit], select, textarea {
     }
 }
 
-@media screen 
+@media (prefers-color-scheme: dark){
+    header {
+        background-color: rgb(39, 39, 39);
+        color: white;
+    }
+
+    #splashWelcome {
+        background-color:rgb(39, 39, 39);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: pink;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
