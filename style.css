@@ -5,6 +5,30 @@
     100% { opacity: 1; }
 }
 
+@keyframes slideInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 /*GENERAL RULES*/
 body {
     width: 100%;
@@ -80,6 +104,7 @@ header ul li {
     margin-right: 3%;
     font-size: 1.2rem;
     flex-grow: 1;
+    animation: slideInRight 1.5s ease 0s 1 normal forwards;
 }
 
 #logo {
