@@ -13,12 +13,18 @@ html {
     display: flex;
 }
 
-a:link {
+a:link { /*Removes the underline and blue*/
     text-decoration: none;
 }
 
-a:visited {
+a:hover {
     text-decoration: none;
+    color: #004aad;
+}
+
+a:visited { /*Makes it so the text decoration is removed on visited*/
+    text-decoration: none;
+    color: black ;
 }
 
 /*NAV BAR/HEADER*/
@@ -44,6 +50,7 @@ header ul li {
     font-size: 1.5vw; /*Used for responsive text - will resize accordingly on different screens*/
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 #navBar {
@@ -122,7 +129,6 @@ header ul li {
 }
 
 /*ABOUT*/
-
 #aboutSubhead {
     color: white;
     font-size: 60px;
@@ -170,3 +176,30 @@ input[type=submit], select, textarea {
     text-align: left;
 }
 
+/*Media Queries*/
+@media (prefers-reduced-motion){
+    .fade-inImage {
+        animation: none;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    header {
+        background-color: rgb(39, 39, 39);
+        color: white;
+    }
+
+    #splashWelcome {
+        background-color:rgb(39, 39, 39);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: pink;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
