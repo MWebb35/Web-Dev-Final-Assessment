@@ -245,13 +245,29 @@ input[type=submit], select, textarea {
 }
 
 @media (prefers-color-scheme: dark){
+    body {
+        background-color: rgb(39, 39, 39);
+    }
     header {
         background-color: rgb(39, 39, 39);
         color: white;
     }
 
+    header ul li {
+        color: white;
+    }
+
+    a:visited {
+        color: white;
+    }
+
     #splashWelcome {
         background-color:rgb(39, 39, 39);
+        color: white;
+    }
+
+    #findMore {
+        color: black;
     }
 
 }
