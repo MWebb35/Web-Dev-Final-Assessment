@@ -41,7 +41,7 @@
               <li>See Reviews</li>
               <li><a href="leaveReview.html">Leave A Review</a></li>
             </ul>-->
-          <li style="flex-grow: 3;"><a href="contact.html" onclick="transition()">Get in Contact</a></li>
+          <li><a href="contact.html" onclick="transition()">Get in Contact</a></li>
           <!--A href allows the number to be called-->
           <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i><a href="tel:07927093498"> 07927 093498</a></li><!--Icon preceded by the company number-->
         </ul>
@@ -87,7 +87,10 @@
       <div class="slideshowConatiner">
 
         <div class="slides fade generalPhotoRules" id="photo1"> <!--Id assigns the appropriate background image-->
-          <h3 class="photoNumber">1 / 6</h3> <!--Displays which slide of the slideshow the user is on-->
+          <div class="flex-container">
+            <h4 class="photoNumber">1 / 6</h3> <!--Displays which slide of the slideshow the user is on-->
+            <h3>Dave Webb Battles a Ferocious Beast &#40;The owner was stood with a broom ready to bonk the croc on the head if it was naughty&#41;</h3>
+          </div>
             <img src="media/crocodile.webp" alt="A man crouched on a board with a thumbs up. Below him there is a crocdile in water.">
             <br>
             <!--Originally I wanted these only produced once at the bottom of the container, but realised 
@@ -98,7 +101,10 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo2">
-          <h3 class="photoNumber">2 / 6</h3>
+          <div class="flex-container">
+            <h4 class="photoNumber">2 / 6</h4>
+            <h3>An eloquently placed bathroom light, courtesy of Dwebbelectrics</h3>
+          </div>
             <img src="media/bathroomLight.webp">
             <br>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -106,7 +112,10 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo3">
-          <h3 class="photoNumber">3 / 6</h3>
+          <div class="flex-container">
+            <h4 class="photoNumber">3 / 6</h4>
+            <h3>A tidy wired plug completed by apprentice Madison Webb</h3>
+          </div>
             <img src="media/socket.webp">
             <br>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -114,7 +123,10 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo4">
-          <h3 class="photoNumber">4 / 6</h3>
+          <div class="flex-container">
+            <h4 class="photoNumber">4 / 6</h4>
+            <h3>The iconic Dwebbelectrics van, complete with its signature blue glitter</h3>
+          </div>
             <img src="media/van.webp">
             <br>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -122,7 +134,10 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo5">
-          <h3 class="photoNumber">5 / 6</h3>
+          <div class="flex-container">
+            <h4 class="photoNumber">5 / 6</h4>
+            <h3>A tidy server remodelling courtesy of Dwebbelectrics</h3>
+          </div>
             <img src="media/server.webp">
             <br>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -130,7 +145,10 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo6">
-          <h3 class="photoNumber">6 / 6</h3>
+          <div class="flex-container">
+            <h4 class="photoNumber">6 / 6</h4>
+            <h3 id="black">The Webb Family that operate and work for Dwebbelectrics</h3>
+          </div>
             <img src="media/family.webp" title="The Webb Family">
             <br>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
