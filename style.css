@@ -29,6 +29,11 @@
 	}
 }
 
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
 /*GENERAL RULES*/
 body {
     max-width: 99%;
@@ -100,7 +105,7 @@ header ul li {
 /*SPLASH WELCOME*/
 #splashWelcome {
     margin-top: 8rem;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     flex-grow: 2;
 }
 
@@ -143,8 +148,9 @@ header ul li {
     align-self: bottom;
     padding: 2vw;
     font-size: 1.2rem;
-    border: none;
-    background-color: white;
+    border: 1px solid black;
+    background-color: rgba(240, 248, 255, 0.144);
+    backdrop-filter: blur(2px);
     color: black;
 }
 
@@ -156,10 +162,19 @@ header ul li {
     color: black;
 }
 
-#findMore a:hover {
-    color: #004aad;
+.float:hover, .float:focus, .float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
 
+/*
+#findMore a:hover, a:focus{
+    color: #004aad;
+    transform: translateY(-8px);
+}
+*/
 .parallax {
   background-image: url("media/cable.webp");
 
@@ -204,6 +219,7 @@ header ul li {
     max-height: 30%;
 }
 
+/*The backgrounds that each photo uses*/
 #photo1 {
     background-image: url(media/crocodile.webp);
 }
@@ -212,13 +228,12 @@ header ul li {
     background-image: url(media/bathroomLight.webp);
 }
 
-#photo2 .next{
+#photo2 .next{ /*as the rightmost edge of this image is light, this arrow gets a special rule to ensure appropriate visibility*/
     color: black;
 }
 
-.next a:hover {
-    text-decoration: none;
-    color: #004aad;
+#photo2 .prev{ 
+    color: black;
 }
 
 #photo3 {
@@ -237,11 +252,13 @@ header ul li {
     background-image: url(media/family.webp);
 }
 
+/*General rules that applies to all of the slide - saves code redundancy by having to write it out multiple times*/
 .generalPhotoRules {
     padding: 2%;
     height: 100%;
 
-    background-attachment: fixed;
+    /*Creates the parallax effect*/
+    background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -253,9 +270,9 @@ header ul li {
 
 .slides img {
     height: 400px;
-    z-index: 2;
+    z-index: 2; /*Creates the image on background effect seamlessly*/
     border: black solid 5px;
-    box-shadow: 5px 5px 5px rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgb(255, 255, 255); /*Gives the image a shadow*/
 }
 
 .photoNumber {
@@ -265,17 +282,13 @@ header ul li {
     text-align: left;
 
     background-color: rgba(240, 248, 255, 0.144);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); /*Makes the text visable by applying a barely visable background*/
 
     width: 9%;
 }
 
 .prev, .next {
     cursor: pointer;
-    /*width: auto;
-    margin-top: -22px;
-    user-select: none;
-    */
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 60px;
@@ -283,20 +296,17 @@ header ul li {
     z-index: 2;
   }
 
+  /*Creates space between prev and next - Would've prefered to use a different method,
+  but that seemed to break the code. This gets the job done*/
   .prev {
     padding-right: 80%;
   }
 
+  /*Fade animation - calls to Keyframe fade*/
   .fade {
     animation-name: fade;
     animation-duration: 2s;
   }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
 
 /*LEAVE A REVIEW FORM*/
 #reviewOpening {

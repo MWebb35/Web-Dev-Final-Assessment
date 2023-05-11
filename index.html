@@ -52,10 +52,10 @@
       <!--Full Logo with fade in-->
       <img class="fade-inImage" id="logo" src="media/Dwebbelectrics_Logo.webp" width="800vw" height="auto" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre. The text to the right reads D Webb Electrics, Domestic and Commercial">
       <!--Brief company overview-->
-      <p id="overview"><em>Bringing light to your home and business with quality electrical solutions since 2018</em></p>
+      <p id="overview"><em><strong>Bringing light to your home and business with quality electrical solutions since 2018</strong></em></p>
     </section>
     <!--Find out more button-->
-    <button id="findMore"><a href="#aboutSubhead"><strong>Find Out More</strong></a></button>
+    <button class="float" id="findMore"><a href="#aboutSubhead"><strong>Find Out More</strong></a></button>
   </article>
 
   <!--To Top Button - Utilises both CSS and Javascript-->
@@ -77,16 +77,20 @@
         </p>
     </section>
 
+    <!--Gallery-->
     <section class="gallery">
       <h2 id="gallerySubhead">Gallery</h2>
-      
       <div class="slideshowConatiner">
-        <div class="slides fade generalPhotoRules" id="photo1">
-          <h3 class="photoNumber">1 / 6</h3>
-            <img src="media/crocodile.webp">
+
+        <div class="slides fade generalPhotoRules" id="photo1"> <!--Id assigns the appropriate background image-->
+          <h3 class="photoNumber">1 / 6</h3> <!--Displays which slide of the slideshow the user is on-->
+            <img src="media/crocodile.webp" alt="A man crouched on a board with a thumbs up. Below him there is a crocdile in water.">
             <br>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!--Originally I wanted these only produced once at the bottom of the container, but realised 
+            it was more effective to have them as a part of each slide as it could appropriately react to 
+          the background-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--Creates the previous arrow-->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> <!--Creates the next arrow-->
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo2">
@@ -123,13 +127,12 @@
 
         <div class="slides fade generalPhotoRules" id="photo6">
           <h3 class="photoNumber">6 / 6</h3>
-            <img src="media/family.webp">
+            <img src="media/family.webp" title="The Webb Family">
             <br>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
-
     </section>
   </main>
   
