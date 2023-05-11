@@ -37,7 +37,7 @@
           <li><a href="#aboutSubhead" style="cursor: pointer;">About</a></li> <!--Link to about section on the same page-->
           <li><a href="#gallerySubhead">Gallery</a></li>
           <li><a href="leaveReview.html">Reviews</a></li>
-          <li style="flex-grow: 3;"><a href="contact.html">Get in Contact</a></li>
+          <li style="flex-grow: 3;"><a href="contact.html" onclick="transition()">Get in Contact</a></li>
           <!--A href allows the number to be called-->
           <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i><a href="tel:07927093498"> 07927 093498</a></li><!--Icon preceded by the company number-->
         </ul>
@@ -55,7 +55,7 @@
       <p id="overview"><em>Bringing light to your home and business with quality electrical solutions since 2018</em></p>
     </section>
     <!--Find out more button-->
-    <button id="findMore"><a href="#aboutSubhead">Find Out More</a></button>
+    <button id="findMore"><a href="#aboutSubhead"><strong>Find Out More</strong></a></button>
   </article>
 
   <!--To Top Button - Utilises both CSS and Javascript-->
@@ -77,27 +77,59 @@
         </p>
     </section>
 
-    <section>
+    <section class="gallery">
       <h2 id="gallerySubhead">Gallery</h2>
+      
       <div class="slideshowConatiner">
-        <div class="slides fade">
-          <h3>1 / 3</h3>
-            <img>
+        <div class="slides fade generalPhotoRules" id="photo1">
+          <h3 class="photoNumber">1 / 6</h3>
+            <img src="media/crocodile.webp">
+            <br>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="slides fade generalPhotoRules" id="photo2">
+          <h3 class="photoNumber">2 / 6</h3>
+            <img src="media/bathroomLight.webp">
+            <br>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="slides fade generalPhotoRules" id="photo3">
+          <h3 class="photoNumber">3 / 6</h3>
+            <img src="media/socket.webp">
+            <br>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="slides fade generalPhotoRules" id="photo4">
+          <h3 class="photoNumber">4 / 6</h3>
+            <img src="media/van.webp">
+            <br>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="slides fade generalPhotoRules" id="photo5">
+          <h3 class="photoNumber">5 / 6</h3>
+            <img src="media/server.webp">
+            <br>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="slides fade generalPhotoRules" id="photo6">
+          <h3 class="photoNumber">6 / 6</h3>
+            <img src="media/family.webp">
+            <br>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
 
-      <div class="slides fade">
-        <h3>2 / 3</h3>
-          <img>
-      </div>
-
-      <div class="slides fade">
-        <h3>3 / 3</h3>
-          <img>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </section>
   </main>
   
