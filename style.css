@@ -364,6 +364,31 @@ textarea {
     text-align: left;
 }
 
+/*Footer
+*/
+footer {
+    clear: both;
+    position: relative;
+    margin-top: 5%;
+    background-image: linear-gradient(to top, rgba(0, 0, 255, 0.808), rgb(149, 213, 255));
+    max-height: 20%;
+    width: auto;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+}
+
+footer img {
+    margin-left: 5%;
+}
+
+#aboutCompany {
+    text-align: left;
+    max-width: 20%;
+    left: 0;
+}
+
+
 /*MEDIA QUERIES*/
 @media (prefers-reduced-motion){
     .fade-inImage {
