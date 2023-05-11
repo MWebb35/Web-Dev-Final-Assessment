@@ -49,14 +49,14 @@ a:link { /*Removes the underline and blue*/
     color: white;
 }
 
-a:hover {
-    text-decoration: none;
-    color: #004aad;
-}
-
 a:visited { /*Makes it so the text decoration is removed on visited*/
     text-decoration: none;
     color: rgb(255, 255, 255) ;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #004aad;
 }
 
 /*NAV BAR/HEADER*/
@@ -67,7 +67,7 @@ header {
     top: 0;
     width: 100%;
     border: 1px solid black;
-    background-image: linear-gradient(to top, rgba(0, 0, 255, 0.808), rgb(81, 184, 253));
+    background-image: linear-gradient(to top, rgba(0, 0, 255, 0.808), rgb(149, 213, 255));
     background-color: rgba(253, 253, 253, 0.144);
     backdrop-filter: blur(3px);
     z-index: 99;
@@ -81,7 +81,7 @@ header ul li {
     margin-left: 10%;
     padding-top: 10px;
     flex-grow: 1;
-    font-size: 1.5vw; /*Used for responsive text - will resize accordingly on different screens*/
+    font-size: 1.7vw; /*Used for responsive text - will resize accordingly on different screens*/
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
@@ -146,6 +146,18 @@ header ul li {
     border: none;
     background-color: white;
     color: black;
+}
+
+#findMore a:link {
+    color: black;
+}
+
+#findMore a:visited {
+    color: black;
+}
+
+#findMore a:hover {
+    color: #004aad;
 }
 
 .parallax {
@@ -255,14 +267,14 @@ input[type=submit], select, textarea {
 }
 
 @media (prefers-color-scheme: dark){
-    header {
+    /*header {
         background-color: rgb(39, 39, 39);
         color: white;
     }
 
     #splashWelcome {
         background-color:rgb(39, 39, 39);
-    }
+    }*/
 
 }
 
