@@ -97,6 +97,7 @@ header ul li {
 
 #icon{
     height: 100%;
+    margin: 5%;
 }
 
 #navBar {
@@ -364,8 +365,18 @@ textarea {
     text-align: left;
 }
 
-/*Footer
-*/
+/*SEE REVIEW*/
+
+.container {
+    display: grid;
+    grid-template-columns: 3;
+}
+
+#profilePicture {
+    border-radius: 50%;
+}
+
+/*Footer*/
 footer {
     clear: both;
     position: relative;
@@ -375,6 +386,7 @@ footer {
     width: auto;
     padding-top: 1rem;
     margin-bottom: 0%;
+    border: none;
     bottom: 0;
     left: 0;
 }
