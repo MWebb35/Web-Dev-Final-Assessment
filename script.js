@@ -29,6 +29,24 @@ function validateReview() {
   }
 }
 
+//VALIDATE CONTACT FORM 
+function validateForm(){
+  var contactName = document.forms["contactForm"]["firstName"].value;
+  var contactEmail = document.forms["contactForm"]["email"].value;
+  var contactMessage = document.forms["contactForm"]["message"].value;
+
+  if (contactName == ""){
+    alert("Please enter your first name to continue");
+    return false;
+  } else if (contactEmail == ""){
+    alert("Please enter your email to continue");
+    return false;
+  } else if (contactMessage == ""){
+    alert("Please enter a message to continue");
+    return false;
+  }
+}
+
 //GALLERY
 let slideIndex = 1;
 showSlides(slideIndex);
