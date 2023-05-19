@@ -111,6 +111,10 @@ header ul li {
     align-items: center;
 } 
 
+#telephoneNumber {
+    margin-right: 3%;
+}
+
 /*DROPDOWN MENU*/
 /*Creates the drop down menu*/
 .dropdown-options {
@@ -159,7 +163,7 @@ header ul li {
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 3%;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     flex-grow: 1;
     animation: slideInRight 1.5s ease 0s 1 normal forwards;
 }
@@ -193,10 +197,12 @@ header ul li {
 #findMore {
     align-self: bottom;
     padding: 2vw;
-    font-size: 1.2rem;
-    border: 1px solid black;
+    font-size: 1.8rem;
+    font-family: 'Overpass Mono', monospace;
+    /*border: 1px solid black;*/
+    border: none;
     margin: 40px;
-    background-color: rgba(240, 248, 255, 0.144);
+    background-color: rgba(199, 199, 199, 0.144);
     backdrop-filter: blur(2px);
     color: black;
 }
@@ -252,7 +258,7 @@ header ul li {
     width: 70%; /*Removes justifying of content*/
     margin-left: 15%;
     background-color: rgba(240, 248, 255, 0.144);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
 }
 
 /*SERVICES*/
