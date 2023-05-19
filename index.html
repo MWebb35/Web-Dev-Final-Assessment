@@ -16,7 +16,7 @@
   <link rel="icon" href="media/DW_Icon.webp"/>
 
   <!--Stylesheet-->
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
 
   <!--Icon Library - allows the use of external icons-->
   <script src="https://kit.fontawesome.com/b8f6c2aae8.js" crossorigin="anonymous"></script>
@@ -35,7 +35,7 @@
         <!--Flexbox within a flexbox-->
         <ul class="flex-container" id="navBar">
           <li><a href="#aboutSubhead" style="cursor: pointer;">About</a></li> <!--Link to about section on the same page-->
-          <li><a href="#gallerySubhead">Gallery</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li id="reviewMenu"><a href="#">Reviews</a></li>
           <!--<ul class="reviews">
               <li>See Reviews</li>
@@ -94,10 +94,11 @@
     </section>
 
     <!--Gallery-->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="slideshowConatiner">
+        
         <div class="slides fade generalPhotoRules" id="photo1"> <!--Id assigns the appropriate background image-->
-          <h2 id="gallerySubhead">Gallery</h2>
+          <h2 class="gallerySubhead">Gallery</h2>
           <div class="flex-container">
             <h4 class="photoNumber">1 / 6</h3> <!--Displays which slide of the slideshow the user is on-->
             <h3>Dave Webb Battles a Ferocious Beast &#40;The owner was stood with a broom ready to bonk the croc on the head if it was naughty&#41;</h3>
@@ -112,6 +113,7 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo2">
+          <h2 class="gallerySubhead">Gallery</h2>
           <div class="flex-container">
             <h4 class="photoNumber">2 / 6</h4>
             <h3>An eloquently placed bathroom light, courtesy of Dwebbelectrics</h3>
@@ -123,6 +125,7 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo3">
+          <h2 class="gallerySubhead">Gallery</h2>
           <div class="flex-container">
             <h4 class="photoNumber">3 / 6</h4>
             <h3>A tidy wired plug completed by apprentice Madison Webb</h3>
@@ -134,6 +137,7 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo4">
+          <h2 class="gallerySubhead">Gallery</h2>
           <div class="flex-container">
             <h4 class="photoNumber">4 / 6</h4>
             <h3>The iconic Dwebbelectrics van, complete with its signature blue glitter</h3>
@@ -145,6 +149,7 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo5">
+          <h2 class="gallerySubhead">Gallery</h2>
           <div class="flex-container">
             <h4 class="photoNumber">5 / 6</h4>
             <h3>A tidy server remodelling courtesy of Dwebbelectrics</h3>
@@ -156,6 +161,7 @@
         </div>
 
         <div class="slides fade generalPhotoRules" id="photo6">
+          <h2 class="gallerySubhead">Gallery</h2>
           <div class="flex-container">
             <h4 class="photoNumber">6 / 6</h4>
             <h3 id="black">The Webb Family that operate and work for Dwebbelectrics</h3>

@@ -184,6 +184,7 @@ header ul li {
     padding: 2vw;
     font-size: 1.2rem;
     border: 1px solid black;
+    margin: 40px;
     background-color: rgba(240, 248, 255, 0.144);
     backdrop-filter: blur(2px);
     color: black;
@@ -211,7 +212,7 @@ header ul li {
 }
 */
 .parallax {
-  background-image: url("media/cable.webp");
+  background-image: url("../media/cable.webp");
 
   /* Set a specific height */
   min-height: 500px;
@@ -230,7 +231,8 @@ header ul li {
 /*ABOUT*/
 #aboutSubhead {
     color: white;
-    font-size: 60px;
+    font-size: 100px;
+    margin: 0;
 }
 
 #aboutP {
@@ -245,8 +247,9 @@ header ul li {
     box-sizing: border-box;
 }
 
-#gallerySubhead {
-    font-size: 60px;
+.gallerySubhead {
+    font-size: 100px;
+    margin: 0;
     color: white;
 }
 
@@ -257,11 +260,11 @@ header ul li {
 
 /*The backgrounds that each photo uses*/
 #photo1 {
-    background-image: url(media/crocodile.webp);
+    background-image: url(../media/crocodile.webp);
 }
 
 #photo2 {
-    background-image: url(media/bathroomLight.webp);
+    background-image: url(../media/bathroomLight.webp);
 }
 
 #photo2 .next{ /*as the rightmost edge of this image is light, this arrow gets a special rule to ensure appropriate visibility*/
@@ -273,19 +276,19 @@ header ul li {
 }
 
 #photo3 {
-    background-image: url(media/socket.webp);
+    background-image: url(../media/socket.webp);
 }
 
 #photo4 {
-    background-image: url(media/van.webp);
+    background-image: url(../media/van.webp);
 }
 
 #photo5 {
-    background-image: url(media/server.webp);
+    background-image: url(../media/server.webp);
 }
 
 #photo6 {
-    background-image: url(media/family.webp);
+    background-image: url(../media/family.webp);
 }
 
 /*General rules that applies to all of the slide - saves code redundancy by having to write it out multiple times*/
