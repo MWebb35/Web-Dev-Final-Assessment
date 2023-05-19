@@ -39,6 +39,8 @@ body {
     max-width: 99%;
     text-align: center;
     font-family: sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
 }
 
 html {
@@ -98,7 +100,11 @@ header ul li {
 #icon{
     height: 100%;
     margin: 5%;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
 }
+
+
 
 #navBar {
     justify-content: center;
@@ -108,18 +114,19 @@ header ul li {
 /*DROPDOWN MENU*/
 /*Creates the drop down menu*/
 .dropdown-options {
-    display: block;
+    display: none;
     position: absolute;
     overflow: auto;
-    left: 50%;
+    /*left: 50%;*/
     background-color:#fff;
     border-radius:5px;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
 
 /*Reveals on hover the drop down menu*/
-#reviewMenu a:hover .dropdown-options {
+#reviewMenu:hover .dropdown-options {
     display: block;
+    background-color: aqua;
 }
 
 .dropdown-options a {
@@ -242,6 +249,12 @@ header ul li {
     backdrop-filter: blur(2px);
 }
 
+/*SERVICES*/
+
+#servicesSubhead {
+    font-size: 100px;
+}
+
 /*GALLERY - Slideshow adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 .gallery {
     box-sizing: border-box;
@@ -261,6 +274,7 @@ header ul li {
 /*The backgrounds that each photo uses*/
 #photo1 {
     background-image: url(../media/crocodile.webp);
+    /*background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/crocodile.webp);*/
 }
 
 #photo2 {
