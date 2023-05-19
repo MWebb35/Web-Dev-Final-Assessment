@@ -61,7 +61,7 @@ a:visited { /*Makes it so the text decoration is removed on visited*/
     color: rgb(255, 255, 255) ;
 }
 
-a:hover {
+a:hover { /*Changes the colour of the text on hover*/
     text-decoration: none;
     color: #004aad;
 }
@@ -103,7 +103,39 @@ header ul li {
 #navBar {
     justify-content: center;
     align-items: center;
-}  
+} 
+
+/*DROPDOWN MENU*/
+/*Creates the drop down menu*/
+.dropdown-options {
+    display: block;
+    position: absolute;
+    overflow: auto;
+    left: 50%;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+/*Reveals on hover the drop down menu*/
+#reviewMenu a:hover .dropdown-options {
+    display: block;
+}
+
+.dropdown-options a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    padding:20px 40px;
+}
+
+/*On hover the options inside the dropdown menu changes*/
+.dropdown-options a:hover {
+    color: #ffffff;
+    background-color: #004aad;
+    border-radius:5px;
+  }
 
 /*SPLASH WELCOME*/
 #splashWelcome {
@@ -423,9 +455,13 @@ footer img {
 
 @media screen and (max-width: 600px) {
     body {
-        background-color: pink;
+        width: 500px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
+    }
+
+    img {
+      max-width: 400px;
     }
 }
