@@ -41,6 +41,7 @@ body {
     font-family: sans-serif;
     background-color: #f8f8f8;
     margin: 0;
+    font-family: 'Overpass Mono', monospace;
 }
 
 html {
@@ -75,7 +76,6 @@ header {
     left: 0;
     top: 0;
     width: 99.9%;
-    border: 1px solid black;
     background-image: linear-gradient(to top, rgba(0, 0, 255, 0.808), rgb(149, 213, 255));
     background-color: rgba(253, 253, 253, 0.144);
     backdrop-filter: blur(3px);
@@ -146,8 +146,9 @@ header ul li {
 
 /*SPLASH WELCOME*/
 #splashWelcome {
-    margin-top: 8rem;
+    margin-top: 9rem;
     /*border: 1px solid black;*/
+    padding-bottom: 10%;
     flex-grow: 2;
     mix-blend-mode: multiply;
     filter: contrast(1);
@@ -169,6 +170,7 @@ header ul li {
 
 .fade-inImage {
     animation: fadeIn 3s;
+    margin-top: 9rem;
 }
 
 /*TO TOP BUTTON*/
@@ -247,7 +249,7 @@ header ul li {
 #aboutP {
     color: white;
     font-size: 25px;
-    width: 70%;
+    width: 70%; /*Removes justifying of content*/
     margin-left: 15%;
     background-color: rgba(240, 248, 255, 0.144);
     backdrop-filter: blur(2px);
