@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+     <!--Webpage Favicon-->
+    <link rel="icon" href="media/DW_Icon.webp"/>
+
+    <!--Stylesheet-->
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+
+    <!--Icon Library - allows the use of external icons-->
+    <script src="https://kit.fontawesome.com/b8f6c2aae8.js" crossorigin="anonymous"></script>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header-->
+  <header>
+    <!--Creates the container at the top-->
+    <section class="flex-container">
+      <!--Logo-->
+      <a href="#splashWelcome"><img src="media/DW_Icon.webp" id="icon" width="80" height="80" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre."></a>
+      
+      <!--Navigation - width is included to solve a logic error where the elements would not space equally-->
+      <nav style="width: 100%">
+        <!--Flexbox within a flexbox-->
+        <ul class="flex-container" id="navBar">
+          <li><a href="#aboutSubhead" style="cursor: pointer;">About</a></li> <!--Link to about section on the same page-->
+          <li><a href="#gallery">Gallery</a></li>
+          <li id="reviewMenu"><a href="#">Reviews</a></li>
+          <!--<ul class="reviews">
+              <li>See Reviews</li>
+              <li><a href="leaveReview.html">Leave A Review</a></li>
+            </ul>-->
+          <li><a href="contact.html" onclick="transition()">Get in Contact</a></li>
+          <!--A href allows the number to be called-->
+          <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i><a href="tel:07927093498" id="telephoneNumber"> 07927 093498</a></li><!--Icon preceded by the company number-->
+        </ul>
+      </nav>
+      <!-- Previous attempt at making the phone number stay right: <p style="align-self: right;">07927 093498</p> -->
+    </section>
+
+    <!--Dropdown menu for review page - Has to sit outside the main section as to not gain flex display-->
+    <ul class="dropdown-options">
+      <li><a href="seeReview.html">View Reviews</a></li>
+      <li><a href="leaveReview.html">Leave Reviews</a></li>
+    </ul>
+  </header>
+
+    <!--Gallery-->
+    <section class="gallery" id="gallery">
+        <div class="slideshowConatiner">
+          
+          <div class="slides fade generalPhotoRules" id="photo1"> <!--Id assigns the appropriate background image-->
+            <h2 class="gallerySubhead">Gallery</h2>
+            <div class="flex-container">
+              <h4 class="photoNumber">1 / 6</h3> <!--Displays which slide of the slideshow the user is on-->
+              <h3>Dave Webb Battles a Ferocious Beast<br>&#40;The owner was stood with a broom ready to bonk the croc on the head if it was naughty&#41;</h3>
+            </div>
+              <img src="media/crocodile.webp" title="Brave Dave Webb, demonstrating the traits of a good electrician"alt="A man crouched on a board with a thumbs up. Below him there is a crocdile in water.">
+              <br>
+              <!--Originally I wanted these only produced once at the bottom of the container, but realised 
+              it was more effective to have them as a part of each slide as it could appropriately react to 
+            the background-->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--Creates the previous arrow-->
+              <a class="next" onclick="plusSlides(1)">&#10095;</a> <!--Creates the next arrow-->
+          </div>
+  
+          <div class="slides fade generalPhotoRules" id="photo2">
+            <h2 class="gallerySubhead">Gallery</h2>
+            <div class="flex-container">
+              <h4 class="photoNumber">2 / 6</h4>
+              <h3>An eloquently placed bathroom light, courtesy of Dwebbelectrics</h3>
+            </div>
+              <img src="media/bathroomLight.webp" title="An example of a lighting fixture fitted by Dwebbelectrics." alt="A bathroom light hangs in a bathroom, which is switched on. The walls are plastered but unpainted.">
+              <br>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+  
+          <div class="slides fade generalPhotoRules" id="photo3">
+            <h2 class="gallerySubhead">Gallery</h2>
+            <div class="flex-container">
+              <h4 class="photoNumber">3 / 6</h4>
+              <h3>A tidy wired plug completed by apprentice Madison Webb</h3>
+            </div>
+              <img src="media/socket.webp" title="A socket completed by an apprentice at Dwebbelectrics" alt="A wired British plugsocket. The front of the plug socket hangs off the wall, revealing the cables inside.">
+              <br>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+  
+          <div class="slides fade generalPhotoRules" id="photo4">
+            <h2 class="gallerySubhead">Gallery</h2>
+            <div class="flex-container">
+              <h4 class="photoNumber">4 / 6</h4>
+              <h3>The iconic Dwebbelectrics van, complete with its signature blue glitter</h3>
+            </div>
+              <img src="media/van.webp" title="The Dwebbelectrics Van"alt="The rear of a grey van with the Dwebbelectrics logo embellished in blue glitter. The van is parked in a driveway. Features of a brick house can be seen.">
+              <br>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+  
+          <div class="slides fade generalPhotoRules" id="photo5">
+            <h2 class="gallerySubhead">Gallery</h2>
+            <div class="flex-container">
+              <h4 class="photoNumber">5 / 6</h4>
+              <h3>A tidy server remodelling courtesy of Dwebbelectrics</h3>
+            </div>
+              <img src="media/server.webp" title="An example of a server completed by Dwebbelectrics" alt="A picture of a server completed by Dwebbelectrics. The server is black and purple, and there are wires coming out from the central box">
+              <br>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+  
+          <div class="slides fade generalPhotoRules" id="photo6">
+            <h2 class="gallerySubhead">Gallery</h2>
+            <div class="flex-container">
+              <h4 class="photoNumber">6 / 6</h4>
+              <h3 id="black">The Webb Family that operate and work for Dwebbelectrics</h3>
+            </div>
+              <img src="media/family.webp" title="The Webb Family" alt="Three figures stand within frame in the picture. A man (Dave Webb) stands on the leftmost edge of the image. In the middle a woman (Jodi Webb) stands, and next to her at the rightmost edge of the image a child stands (Madison Webb).">
+              <br>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <footer class="flex-container">
+      <p id="aboutCompany"><u>ABOUT US</u><br>Dwebbelectrics is a family run Electrical Engineering Company. Founded in 2018 by directors David Webb and Jodi Webb, Dwebbelectrics provides a range of electrical services to the South of England.</p>
+      <p>&#169;2023 Madison Webb All Rights Reserved</p>
+      <img src="media/NICEIC-logo.webp" width="200rem" height="100rem" title="NICEIC approved contractor" alt="The NICEIC approved contractor logo, which is the name of the company with alternating black and red text">
+    </footer>
+
+    <!--Call to JS-->
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
