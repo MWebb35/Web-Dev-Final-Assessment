@@ -273,6 +273,11 @@ header ul li {
     font-size: 100px;
 }
 
+#services {
+    display: inline-grid;
+    grid-template-columns: 2;
+}
+
 /*GALLERY - Slideshow adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 .gallery {
     margin-top: 5%;
