@@ -117,23 +117,29 @@ header ul li {
 
 /*DROPDOWN MENU*/
 /*Creates the drop down menu*/
-.dropdown-options {
-    display: none;
+#dropdown {
+    display: block;
     position: absolute;
     overflow: auto;
-    /*left: 50%;*/
+    visibility: hidden;
+    left: 50%;
     background-color:#fff;
     border-radius:5px;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
 
-/*Reveals on hover the drop down menu*/
-#reviewMenu:hover .dropdown-options {
-    display: block;
-    background-color: aqua;
+.reviewMenu:hover #dropdown{
+    visibility: visible !important;
+    color:#004aad;
 }
+/*Reveals on hover the drop down menu*/
+/*#reviewMenu:hover .dropdown-options {
+    display: block;
+    visibility: visible;
+    background-color: aqua;
+}*/
 
-.dropdown-options a {
+#dropdown a {
     display: block;
     color: #000000;
     padding: 5px;
@@ -142,7 +148,7 @@ header ul li {
 }
 
 /*On hover the options inside the dropdown menu changes*/
-.dropdown-options a:hover {
+#dropdown a:hover {
     color: #ffffff;
     background-color: #004aad;
     border-radius:5px;
@@ -407,6 +413,10 @@ header ul li {
     text-align: left;
 }
 
+.contactInfo{
+    margin-top: 15%;
+}
+
 input[type=text], select, textarea { 
     width: 80%;
     margin: 2%;
@@ -462,6 +472,10 @@ footer {
 
 footer img {
     margin-left: 5%;
+}
+
+#approvedContract{
+    border-radius: 5%;
 }
 
 #aboutCompany {

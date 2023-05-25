@@ -40,8 +40,13 @@
         <!--Flexbox within a flexbox-->
         <ul class="flex-container" id="navBar">
           <li><a href="#aboutSubhead" style="cursor: pointer;">About</a></li> <!--Link to about section on the same page-->
-          <li><a href="gallery.html">Gallery</a></li>
-          <li id="reviewMenu"><a href="#">Reviews</a></li>
+          <li><a href="gallery.html" style="cursor: pointer;">Gallery</a></li>
+          <li class="reviewMenu" style="cursor: pointer;">Reviews
+            <ul id="dropdown">
+              <li><a href="seeReview.html">View Reviews</a></li>
+              <li><a href="leaveReview.html">Leave Reviews</a></li>
+            </ul>
+          </li>
           <!--<ul class="reviews">
               <li>See Reviews</li>
               <li><a href="leaveReview.html">Leave A Review</a></li>
@@ -55,10 +60,7 @@
     </section>
 
     <!--Dropdown menu for review page - Has to sit outside the main section as to not gain flex display-->
-    <ul class="dropdown-options">
-      <li><a href="seeReview.html">View Reviews</a></li>
-      <li><a href="leaveReview.html">Leave Reviews</a></li>
-    </ul>
+    
   </header>
 
   <!--Splash Screen Welcome-->
@@ -101,7 +103,7 @@
     <footer class="flex-container">
       <p id="aboutCompany"><u>ABOUT US</u><br>Dwebbelectrics is a family run Electrical Engineering Company. Founded in 2018 by directors David Webb and Jodi Webb, Dwebbelectrics provides a range of electrical services to the South of England.</p>
       <p>&#169;2023 Madison Webb All Rights Reserved</p>
-      <img src="media/NICEIC-logo.webp" width="200rem" height="100rem" title="NICEIC approved contractor" alt="The NICEIC approved contractor logo, which is the name of the company with alternating black and red text">
+      <img id="approvedContract"src="media/NICEIC-logo.webp" width="200rem" height="100rem" title="NICEIC approved contractor" alt="The NICEIC approved contractor logo, which is the name of the company with alternating black and red text">
     </footer>
   
   <!--Call to JS-->
