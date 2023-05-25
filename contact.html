@@ -50,25 +50,31 @@
     </header>
 
     <main>
-        <!--<?="<h1> Oh Hi!</h1>"; ?>-->
-        <section class="container">
-            <form id="contactForm" onsubmit="return validateForm()"> <!--action="validate.php" method="post"-->
+        <!--<section class="container">
+            <form id="contactForm" onsubmit="return validateForm()"> action="validate.php" method="post"
                 <label for="firstName">First Name</label><br>
                 <input type="text" id="firstName" name="firstName" placeholder="First name"><br>
-                <!--value="<?=$POST['firstName'];?>"-->
+                value="<?=$POST['firstName'];?>"
     
                 <label for="email">Email</label><br>
                 <input type="text" id="email" name="email" placeholder="Email"><br>
-                <!--value="<?=$POST['email'];?>"-->
+                value="<?=$POST['email'];?>"
     
                 <label for="message">Message</label><br>
                 <textarea type="text" id="message" name="message" placeholder="Message"></textarea><br>
-                <!--value="<?=$POST['message'];?>"-->
+                value="<?=$POST['message'];?>"
 
                 <input type="submit" value="Submit">
             </form>
 
-            <!--echo filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);-->
+            echo filter_var($_POST['email'],FILTER_SANITIZE_EMAIL)
+
+        </section>-->
+        <!--<?="<h1> Oh Hi!</h1>"; ?>-->
+
+        <section class="contactInfo container">
+            <h2 style="text-align: center;">Get in Contact</h2>
+            <p>Interested in </p>
 
         </section>
         

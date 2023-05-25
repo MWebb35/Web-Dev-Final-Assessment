@@ -277,6 +277,8 @@ header ul li {
     font-size: 100px;
     margin: 0;
     color: white;
+    background-color: rgba(240, 248, 255, 0.144);
+    backdrop-filter: blur(2px); /*Makes the text visable by applying a barely visable background*/
 }
 
 .slideshowContainer {
@@ -389,13 +391,16 @@ header ul li {
   }
 
 /*LEAVE A REVIEW FORM*/
+.title {
+    margin-top: 10%;
+}
 #reviewOpening {
     margin: 10%;
 }
 
 .container {
     border-radius: 5px;
-    margin: 10%;
+    margin: 5%;
     background-color: #f2f2f2;
     padding: 20px;
     width: 80%;
@@ -445,6 +450,7 @@ footer {
     position: relative;
     margin-top: 5%;
     background-image: linear-gradient(to top, rgba(0, 0, 255, 0.808), rgb(149, 213, 255));
+    color: white;
     max-height: 20%;
     width: auto;
     padding-top: 1rem;
