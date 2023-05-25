@@ -33,7 +33,7 @@
         <!--Creates the container at the top-->
         <section class="flex-container">
         <!--Logo-->
-        <a href="index.html"><img src="media/DW_Icon.webp" width="80" height="80" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre."></a>
+        <a href="index.html"><img src="media/DW_Icon.webp" id="icon" width="80" height="80" alt="The logo for D Webb Electrics. The right is a dark blue diamond with a white lightning bolt in the centre."></a>
         
         <!--Navigation - width is included to solve a logic error where the elements would not space equally-->
         <nav style="width: 100%">
@@ -59,13 +59,13 @@
 
         <section class="contactInfo container">
             <h2 style="text-align: center;">Get in Contact</h2>
-            <p style="text-align: center;">We'd love to hear from you</p>
+            <p style="text-align: center;">Questions? Queries? We'd love to hear from you!</p>
 
             <section class="flex-container">
                 <article id="contactDetails">
-                    <p>Tel: 07927 093498</p>
-                    <p>Email: dwebbelectrics@gmail.com</p>
-                    <p>Registered office space:<br> 24 Picton House Hussar Court,<br> Waterlooville,<br> Hampshire,<br> United Kingdom,<br> PO7 7SQ</p>
+                    <p><strong>Tel: </strong>07927 093498</p>
+                    <p><strong>Email: </strong>dwebbelectrics@gmail.com</p>
+                    <p><strong>Registered office space:</strong><br> 24 Picton House Hussar Court,<br> Waterlooville,<br> Hampshire,<br> United Kingdom,<br> PO7 7SQ</p>
                 </article>
                 <form id="contactForm" onsubmit="return validateForm()"> <!--action="validate.php" method="post"-->
                     <label for="firstName">First Name</label><br>
@@ -80,7 +80,7 @@
                     <textarea type="text" id="message" name="message" placeholder="Message"></textarea><br>
                     <!--value="<?=$POST['message'];?>"-->
     
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id="submit">
                 </form>
     
                 <!--echo filter_var($_POST['email'],FILTER_SANITIZE_EMAIL)-->

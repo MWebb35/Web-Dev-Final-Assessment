@@ -411,10 +411,27 @@ header ul li {
     padding: 20px;
     width: 80%;
     text-align: left;
+    
 }
 
 .contactInfo{
     margin-top: 15%;
+    border: #004aad solid 1px;
+    box-shadow: 5px 10px #004aad;
+}
+
+form {
+    margin: 10%;
+}
+
+#submit {
+    border:#004aad solid 2px;
+    background-color: #ffffff;
+    border-radius: 5%;
+}
+
+#message {
+    font-size: 16px;
 }
 
 input[type=text], select, textarea { 
@@ -435,9 +452,10 @@ textarea {
     resize: none;
 }
 
+/*
 .star1:hover + .colourStar1{
     visibility: hidden;
-}
+}*/
 
 .container label {
     text-align: left;
@@ -462,7 +480,6 @@ footer {
     background-image: linear-gradient(to top, rgba(0, 0, 255, 0.808), rgb(149, 213, 255));
     color: white;
     max-height: 20%;
-    width: auto;
     padding-top: 1rem;
     margin-bottom: 0%;
     border: none;
@@ -475,12 +492,14 @@ footer img {
 }
 
 #approvedContract{
-    border-radius: 5%;
+    padding-right: 5%;
 }
 
 #aboutCompany {
     text-align: left;
-    max-width: 20%;
+    max-width: 30%;
+    padding-right: 10%;
+    padding-left: 5%;
     left: 0;
 }
 
