@@ -274,6 +274,7 @@ header ul li {
 }
 
 #services {
+    text-align: left;
     display: inline-grid;
     grid-template-columns: 2;
 }
