@@ -279,6 +279,10 @@ header ul li {
     grid-template-columns: 2;
 }
 
+video {
+    border-radius: 10%;
+}
+
 /*GALLERY - Slideshow adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 .gallery {
     margin-top: 5%;
@@ -472,6 +476,8 @@ textarea {
 .container {
     display: grid;
     grid-template-columns: 3;
+    border: #004aad solid 1px;
+    box-shadow: 5px 10px #004aad;
 }
 
 #profilePicture {
