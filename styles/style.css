@@ -426,15 +426,23 @@ video {
 
 .contactInfo{
     margin-top: 15%;
-    border: #004aad solid 1px;
-    box-shadow: 5px 10px #004aad;
+    border: #004aad solid 3px;
+    box-shadow: 10px 30px #004aad;
+}
+
+#contactDetails {
+    font-size: 1.5rem;
+}
+
+#contactForm {
+    font-size: 1.2rem;
 }
 
 form {
     margin: 10%;
 }
 
-#submit {
+.submit {
     border:#004aad solid 2px;
     background-color: #ffffff;
     border-radius: 5%;
