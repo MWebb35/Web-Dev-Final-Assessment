@@ -424,8 +424,13 @@ video {
     
 }
 
+/*CONTACT FORM*/
+#contactTitle {
+    font-size: 6rem;
+}
+
 .contactInfo{
-    margin-top: 15%;
+    margin-top: 10%;
     border: #004aad solid 3px;
     box-shadow: 10px 30px #004aad;
 }
