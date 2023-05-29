@@ -95,36 +95,47 @@
     </section>
 
     <!--Services Section-->
-    <section>
+    <section id="services">
       <h2 id="servicesSubhead">Services</h2>
-      <ul id="services">
-        <li>Electrical Installation</li>
-        <li>Electric car charging points
-          <video width="200" height="200" muted loop autoplay>
+      <h3>Free estimates, quote and advice</h3>
+      <h4>(All prices are subject to change and exclude VAT)</h4>
+      <ul id="serviceList">
+        <li class="flex-container">
+          <video id="carCharging" width="200" height="200" muted loop autoplay><!--Embeds the video into the page - muted, loop and autoplay solves a logic error where the video wouldn't play without controls (autoplay needed to be coupled with muted)-->
           <source src="media/carCharging.mp4" type="video/mp4">
           <p>Sorry, your browser doesn't support embedded videos</p>
-        </video></li>
-        <li>Solar Panels
-          <video width="200" height="200" muted loop autoplay>
+        </video>Electric car charging points<br>£750</li>
+        <br>
+        <li>Consumer Unit Change<br>Fuseboard change<br>Starts at £650</li>
+        <br>
+        <li>Socket Outlet<br>£60 per unit</li>
+        <br>
+        <li>Central Heating wiring<br>Starts at £350</li>
+        <br>
+        <li>Emergency Call Out<br>£60 per callout p/h</li>
+        <br>
+        <li>PAT testing<br>80p Per item</li>
+        <br>
+        <li>Rewires<br>~£5500</li>
+        <br><br>
+        <li class="flex-container">Solar Panels<br>£7000
+          <video id="solarPanels" width="200" height="200" muted loop autoplay>
             <source src="media/solarPanels.mp4" type="video/mp4">
             <p>Sorry, your browser doesn't support embedded videos</p>
           </video></li>
-        <li>Rewires</li>
       </ul>
 
     </section>
 
+    <!--FOOTER-->
     <footer class="flex-container">
       <p id="aboutCompany"><u>ABOUT US</u><br>Dwebbelectrics is a family run Electrical Engineering Company. Founded in 2018 by directors David Webb and Jodi Webb, Dwebbelectrics provides a range of electrical services to the South of England.</p>
-      <p>&#169;2023 Madison Webb All Rights Reserved</p>
+      <p id="rights">&#169;2023 Madison Webb All Rights Reserved</p><!--&#169 is the ascii code for the @ symbol-->
       <a href="https://niceic.com/"><img id="approvedContract"src="media/NICEIC-logo.webp" width="200rem" height="100rem" title="NICEIC approved contractor" alt="The NICEIC approved contractor logo, which is the name of the company with alternating black and red text"></a>
     </footer>
   
   <!--Call to JS-->
   <script src="script.js" defer></script>
 </body>
-
-</html>
-
 
 </html>
