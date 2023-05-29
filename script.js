@@ -35,6 +35,7 @@ function validateForm(){
   var contactEmail = document.forms["contactForm"]["email"].value;
   var contactMessage = document.forms["contactForm"]["message"].value;
 
+  //Checks if variable null then returns the appropriate message
   if (contactName == ""){
     alert("Please enter your first name to continue");
     return false;
@@ -44,10 +45,13 @@ function validateForm(){
   } else if (contactMessage == ""){
     alert("Please enter a message to continue");
     return false;
+  } else {
+    alert("Thank you. We're processing your message and we'll get back to you shortly");
+    return true;
   }
 }
 
-//GALLERY
+//GALLERY - Adapted from: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -55,6 +59,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+//Changes the slides gallery
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slides");
